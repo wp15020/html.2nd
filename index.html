@@ -79,7 +79,7 @@ nav ul li a	{display: block;
 			-moz-transition: 1s;
 			-o-transition: 1s;
 			-ms-transition: 1s;
-			background-color: rgba(1,120,205,0);}
+			background-color: rgba(1,122,205,0);}
 
 
 nav ul li a:hover	{background-color: rgba(1,122,205,0.3);}
@@ -154,10 +154,10 @@ footer	{color: #888888;
 		clear: both;
 		border-top: 1px solid #aaaaaa}
 
-small {font-size: 10px;
+small {font-size: 8px;
       font-style: normal;
 	  text-align: left;
-	  display: block;}
+	  display: block}
 small::before {content: 'GREEN LEAF';
 				display: block;
 				width: 200px;
@@ -211,38 +211,36 @@ article section:nth-of-type(1n) figure {float: none;
 										margin: 0}
 article section:nth-of-type(1n) figcaption {text-align: center;
 											margin-bottom: 15px}
-/*３段組み IE8~9 & Opera*/
+/* ３段組み IE8~9 & Opera */
 article section {clear: none;
 				float: left;
 				position: relative}
 article section+section+section {margin-right: 0}
-				}
+	}
 </style>
-<![endif]-->
 <style>
 /*======タブレット用の設定======*/
-@media only screen and (min-width: 600px)
-and (max-width: 899px){
-		div#container {width: 100%
+@media only screen and (min-width: 600px)and (max-width: 899px){
+		div#container {width: 100%;
 					-webkit-box-sizing: border-box;
 					-moz-box-sizing: border-box;
 					box-sizing: border-box;
 					padding: 0 10px;
 					background-position: -3px 380px, 100px 460px}
-		header#pageheader img {width: 100%
+		header#pageheader img {width: 100%;
 							height: auto}
 		nav ul {font-size: 10px}
 		nav ul li a {width: 100px}
 			}
 /*======スマートフォン用の設定======*/
-@media only screen and (min-width: 599px){
-		div#container {width: 100%
+@media only screen and (max-width: 599px){
+		div#container {width: 100%;
 					box-sizing: border-box;
 					-webkit-box-sizing: border-box;
 					-moz-box-sizing: border-box;
 					padding: 0 10px;
 					background-position: -3px 220px, 100px 280px}
-		header#pageheader img {width: 100%
+		header#pageheader img {width: 100%;
 								height: auto}
 		nav ul {font-size: 8px}
 		nav ul li a {width: auto;
@@ -253,16 +251,16 @@ and (max-width: 899px){
 		header#pageheader h2 {font-size: 10px;
 								text-align: left;
 								padding: 0}
-		article header h1 {float: none;}
+		article header h1 {float: none}
 		article header p {margin: 0}
 		article section:nth-of-type(1n) figure
 							{float: none;
-								margin: 0;
-								text-align: center;
-								display: block}
+							margin: 0;
+							text-align: center;
+							display: block}
 		article section:nth-of-type(1n) figcaption
 							{text-align: center;
-								margin-bottom: 15px}
+							margin-bottom: 15px}
 		}
 </style>
 <!--[if ly IE 9]>
@@ -289,7 +287,7 @@ and (max-width: 899px){
 <!--[if lt IE 8]>
 <style>
 	article section {width: 250px}
-	article section {margin-left: 0}
+	article section  figure {margin-left: 0}
 </style>
 <![endif]-->
 
