@@ -294,11 +294,13 @@ article section+section+section {margin-right: 0}
 <script>
 		function myimage(){
 				var canvas = document.getElementById('circle');
-				var ctx = canvas.getContext('2d')
+				if(canvas.getContext){
+				var ctx = canvas.getContext('2d');
 
 				ctx.arc(14,14,14,0,Math.PI*2,true);
-				ctx.fillStyle = "#880000"
-				ctx.fill();
+				ctx.fillStyle = "#" + Math.floor(Math.random()
+								*256*256*256).toString(16);
+				ctx.fill();}
 		}
 </script>
 
